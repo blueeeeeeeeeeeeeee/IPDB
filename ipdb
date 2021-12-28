@@ -1,0 +1,6 @@
+import ipdb.city
+db_city = ipdb.city.City("/Users/blue/Desktop/code/IPDB/ip.ipdb") # 该位置为ip.ipdb存放位置，windows应改为"E:/Users/blue/Desktop/code/IPDB/ip.ipdb"
+while True:
+    IP = input("IP:")
+    res = db_city.find(IP, 'CN')
+    print(res)
